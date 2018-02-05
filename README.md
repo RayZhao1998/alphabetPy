@@ -3,7 +3,7 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.txt)
 [![versions](https://img.shields.io/pypi/v/AlphabetPy.svg)](https://pypi.python.org/pypi/AlphabetPy/1.0)
-[![platform](https://img.shields.io/badge/python-3.5-green.svg)]()
+[![platform](https://img.shields.io/badge/python-3.6-green.svg)]()
 
 A python tool to output characters in console/shell imitates starkwang's alphabetJS
 

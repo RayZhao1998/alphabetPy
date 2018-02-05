@@ -2,15 +2,21 @@ import argparse
 import sys
 from .planar import charactersPlanar
 from .stereo import charactersStereo
+from .calen import charactersCalen
 def Alphabet(str, mode="planar"):
 	if mode == "planar":
+		height = 7
 		characters = charactersPlanar
 	elif mode == "stereo":
+		height = 7
 		characters = charactersStereo
+	elif mode == "calen":
+		height = 3
+		characters = charactersCalen
 	else:
 		print("wrong parameter, please input \"--planar\" or \"--stereo\"!")
 	result = []
-	for i in range(0, 7):
+	for i in range(0, height):
 		tmp = ""
 		for k in range(0, len(str)):
 			tmp += characters[str[k].upper()][i]
@@ -34,13 +40,18 @@ def start():
 
 def getAlphabet(str, mode="planar"):
 	if mode == "planar":
+		height = 7
 		characters = charactersPlanar
 	elif mode == "stereo":
+		height = 7
 		characters = charactersStereo
+	elif mode == "calen":
+		height = 3
+		characters = charactersCalen
 	else:
 		print("wrong parameter, please input \"--planar\" or \"--stereo\"!")
 	result = []
-	for i in range(0, 7):
+	for i in range(0, height):
 		tmp = ""
 		for k in range(0, len(str)):
 			tmp += characters[str[k].upper()][i]

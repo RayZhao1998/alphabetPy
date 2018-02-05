@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
 	name = 'AlphabetPy',
-	version = '1.0',
+	version = '1.0.1',
 	packages = find_packages(),
 	license = 'MIT',
 	author = 'Ray Zhao',
